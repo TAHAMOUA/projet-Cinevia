@@ -1,0 +1,73 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#4D4D4D ;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #7B0C0C;
+    max-width: 7000px;
+    margin: 0 ;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    font-size: 25px;
+    display: flex;
+    padding-left: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffffff;
+    text-align: right;
+}
+.navbar input[type="text"] {
+    padding: 5px 14px;
+    border-radius: 16px;
+
+
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:32px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hero-img {
+    
+width: 500%;
+height: 200%;
+background-image: url('image/movie-poster-background-q1zm830g0hfww2lk.jpg');
+background-repeat: no-repeat;
+
+}
