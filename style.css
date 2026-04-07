@@ -24,6 +24,7 @@ html{
     padding: 20px 24px;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 .logo{
     font-size: 25px;
@@ -37,7 +38,7 @@ html{
 }
 .navbar input[type="text"] {
     padding: 5px 14px;
-    border-radius: 16px;
+    border-radius: 15px;
 
 
 }
@@ -56,18 +57,69 @@ html{
 
 .hero {
     position: relative;
-    height: 400px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    height: 90vh;
     justify-content: center;
+    flex-direction: column;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(image/movie-poster-background-q1zm830g0hfww2lk.jpg) center/ cover no-repeat ;
+    filter: blur(4px);
+    transform: scale(1.05);
+    z-index: 0;
     
 }
-.hero-img {
+.hero-text{
+    color: rgb(255, 253, 253);
+    text-align: center;
     
-width: 500%;
-height: 200%;
-background-image: url('image/movie-poster-background-q1zm830g0hfww2lk.jpg');
-background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
 
+    color : rgb(red, green, blue);
+}
+
+.hero-buttons{
+    margin-top: 5%;
+}
+
+.hero-menu{
+    background-color: #4D4D4D;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    justify-content: center;
+    border: none;
+    margin: 30px auto ;
+    border-radius:6px;
+    z-index: 1;
+}
+
+.hero-menu li a{
+    display: inline-block;
+    padding: 6px 20px;
+    background-color: black;
+    color: #fff;
+    border: 1.5px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-exp{
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
 }
