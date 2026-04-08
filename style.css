@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -122,4 +121,124 @@ html{
     border-radius: 10px;
     text-decoration: none;
     transition: 0.3s;
+}
+/* MOVIES & FAVORITE SECTIONS */
+.movies-section,
+.favorite-section {
+  background: #2a2a2a;
+  margin: 20px auto;
+  padding: 16px;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 13px;
+  background: #3a3a3a;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+/* GRID — 3 colonnes */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* MOVIE CARD */
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.movie-card img {
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie-title {
+  color: #eee;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* BOUTON VOIR DETAILS */
+.btn-details {
+  background-color: #1a6fd4;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 5px;
+  font-size: 11px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-details:hover {
+  background-color: #1558b0;
+}
+.modal{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    max-width: 800px;
+    margin: 100px auto;
+    
+    background: rgba(90, 84, 84, 1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.imag img{
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 100px;
+}
+
+.modal-content{
+    color: white;
+    text-align: left;
+}
+
+.modal-content h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.modal-content p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.btn-fav{
+    margin-top: 20px;
+    margin-left: 300px;
+    padding: 12px 20px;
+    background: #1a6fd4;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.modal-content img{
+    width: 30px;
+    height: 30px;
+    margin-left: 50%;
+}
+/* FOOTER */
+footer {
+  background: #8b1a1a;
+  text-align: center;
+  padding: 10px;
+  color: #ddd;
+  font-size: 12px;
 }
